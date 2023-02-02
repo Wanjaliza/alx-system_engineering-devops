@@ -17,7 +17,7 @@ frontend  getterer-frontend
 backend getterer-backend
         balance roundrobin
         server 91291-web-01 54.87.234.157:80 check
-        server 91291-web-02 100.25.220.105:80 check
+        server 91291-web-02 54.160.115.69:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
