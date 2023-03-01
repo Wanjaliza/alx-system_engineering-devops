@@ -7,6 +7,8 @@ global
 	user haproxy
 	group haproxy
 	daemon
+	maxconn 2048
+	tune.ssl.default-dh-param 2048
 
 	# Default SSL material locations
 	ca-base /etc/ssl/certs
@@ -20,6 +22,8 @@ global
 defaults
 	log	global
 	mode	http
+	option forwardfor
+	option http-server-close
 	option	httplog
 	option	dontlognull
         timeout connect 5000
@@ -33,13 +37,12 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend  getterer-frontend
+frontend  www-http
         bind *:80
-        mode http
-        default_backend getterer-backend
-	bind haproxy-ip:443 ssl crt /etc/haproxy/certs/domain.pem
-	redirect scheme https if !{ ssl_fc }
-backend getterer-backend
+        default_backend www-backend
+	bind *:443 ssl crt /etc/haproxy/certs/www.iankisali.tech.pem
+	
+backend www-backend
         balance roundrobin
         server 91291-web-01 54.87.234.157:80 check
         server 91291-web-02 54.160.115.69:80 check
