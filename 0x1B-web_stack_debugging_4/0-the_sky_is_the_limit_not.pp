@@ -1,7 +1,7 @@
 # Fixing the stack so as to get 0 failing requests from web server
 
 # Involves increasing ULIMIT of default files
-exec { 'fixing--nginx--requests':
+exec { 'fix--for-nginx':
   command => 'sed -i "s/15/4096/" /etc/default/nginx',
   path    => '/usr/local/bin/:/bin'
 }
