@@ -4,7 +4,8 @@ This is a repo contains directories of projects on devops carried out during Sof
 
 In the projects in this repo, I'm learning system engineering as a skill in SWE and using the knowledge acquired to solve tasks that are in this repo.
 
-# Projects
+## Projects
+
 All of the following directories are projects done during the studies:
 | Project name | Description |
 | ------------ | ----------- |
@@ -30,6 +31,8 @@ All of the following directories are projects done during the studies:
 [`0x13-firewall`](https://github.com/iankisali/alx-system_engineering-devops/tree/master/0x13-firewall) | An introduction and understanding of Firewalls including Network and Host-based firewalls. Installed Firewalls in my servers to monitor incoming and outgoing network traffic. |
 [`0x14-mysql`](https://github.com/iankisali/alx-system_engineering-devops/tree/master/0x14-mysql) | Understanding redundancy plans including RAID, Block-level, SQL Replication and Distribution redundancies. Installed and set-up Master-Slave Replication method on web-01 and web02 servers. |
 [`0x15-api`](https://github.com/iankisali/alx-system_engineering-devops/tree/master/0x15-api) | An introduction into APIs, RESTful APIs and the concept of Microservices versus Monolithic Applications. |
+[`0x16-api_advanced`](https://github.com/iankisali/alx-system_engineering-devops/tree/master/0x16-api_advanced) | Understanding how to read API documentation to find endpoints, using API with pagination, parsing JSON results from API, making recursive API call and sorting dictionary by value. Files contains functions queried from [Reddit API](https://www.reddit.com/dev/api/) to perform different tasks . |
+[`0x17-web_stack_debugging_3`](https://github.com/iankisali/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3) | Directory containing automated Puppet file to use `strace` command to fix 500 error in Apache . |
 [`0x18-webstack_monitoring`](https://github.com/iankisali/alx-system_engineering-devops/tree/master/0x18-webstack_monitoring) | Understanding Webstack Monitoring including Application and Server monitoring using Datadog including application performance management, monitoring distributed systems (whitebox, blackbox monitoring & dashboard) and Nginx logging and monitoring. |
 [`0x19-postmortem`](https://github.com/iankisali/alx-system_engineering-devops/tree/master/0x19-postmortem) | Understanding how to write an incident report/Postmortem on occurence of a fault as a Site Reliability Engineer (`SRE`). |
 [`0x1A-application_server`](https://github.com/iankisali/alx-system_engineering-devops/tree/master/0x1A-application_server) | Understanding differences between web and application servers, setting up production with Gunicorn, serving pages with Nginx, adding route with query parameters including API, serving and deploying websites. |
